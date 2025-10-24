@@ -1,0 +1,19 @@
+name: Deploy Databricks Asset Bundle to Prod
+
+on:
+  workflow_run:
+    workflows: ["PureGym DWH Tag Deployment"]
+    types:
+      - completed
+  push:
+    tags:
+      - 'v*.*.*'  # Trigger on new version tag push (e.g., v1.1.4)
+
+jobs:
+  validate-and-deploy-prod:
+    name: Validate and Deploy to Prod
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
