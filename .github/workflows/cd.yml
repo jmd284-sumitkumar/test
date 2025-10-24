@@ -19,10 +19,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Fetch all history and tags to ensure tag checkout works
-     
+          ref: ${{ github.ref }}
       - name: Print commit and tag info
         run: |
           echo "Deploying commit:"
           git rev-parse HEAD
           echo "Deploying tag/reference:"
           echo "$GITHUB_REF"
+      - name: Show commit info
+        run: |
+          echo "Deploying commit: $(git rev-parse HEAD)"
+          echo "Commit message: $(git log -1 --pretty=%B)"
+          echo "Commit author: $(git log -1 --pretty=%an)"
+          echo "Reference: $GITHUB_REF"
