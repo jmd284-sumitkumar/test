@@ -17,3 +17,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history and tags to ensure tag checkout works
+     
+      - name: Print commit and tag info
+        run: |
+          echo "Deploying commit:"
+          git rev-parse HEAD
+          echo "Deploying tag/reference:"
+          echo "$GITHUB_REF"
