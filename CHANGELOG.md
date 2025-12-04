@@ -1,3 +1,17 @@
+# [3.0.0](https://github.com/jmd284-sumitkumar/test/compare/v2.0.0...v3.0.0) (2025-12-04)
+
+
+### Features
+
+* introduce new API ([bf3bf00](https://github.com/jmd284-sumitkumar/test/commit/bf3bf003d59e2b708ff2640546092af572d2a82f))
+* introduce old API ([d8cf006](https://github.com/jmd284-sumitkumar/test/commit/d8cf0068a40ccdf1d486342e701a9229a1944eeb))
+
+
+### BREAKING CHANGES
+
+* This API removes old behavior
+* testing stuff
+
 # [2.0.0](https://github.com/jmd284-sumitkumar/test/compare/v1.1.0...v2.0.0) (2025-12-04)
 
 
