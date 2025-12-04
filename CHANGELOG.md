@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/jmd284-sumitkumar/test/compare/v1.0.0...v1.0.1) (2025-12-04)
+
+
+### Bug Fixes
+
+* test on patch release ([16d6c36](https://github.com/jmd284-sumitkumar/test/commit/16d6c36bfe1e7eef27d019882780dc739b6ce5a2))
+
 # 1.0.0 (2025-12-04)
 
 
