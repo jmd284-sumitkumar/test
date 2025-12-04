@@ -5,16 +5,14 @@
       "@semantic-release/commit-analyzer",
       {
         "preset": "angular",
-        "parserOpts": {
-          "headerPattern": "^(.+?)(?:\\((.*?)\\))?!?: (.*)$",
-          "breakingHeaderPattern": "^(.*)$",
-          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
-        },
         "releaseRules": [
           { "breaking": true, "release": "major" },
           { "type": "feat", "release": "minor" },
           { "type": "fix", "release": "patch" }
-        ]
+        ],
+        "parserOpts": {
+          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+        }
       }
     ],
     [
