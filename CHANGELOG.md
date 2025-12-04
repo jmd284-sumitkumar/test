@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/jmd284-sumitkumar/test/compare/v1.1.0...v2.0.0) (2025-12-04)
+
+
+### Features
+
+* introduce new API ([9d7bcec](https://github.com/jmd284-sumitkumar/test/commit/9d7bcec77191182784217806d039588db5b66ce5))
+
+
+### BREAKING CHANGES
+
+* This API removes old behavior
+
 # [1.1.0](https://github.com/jmd284-sumitkumar/test/compare/v1.0.1...v1.1.0) (2025-12-04)
 
 
